@@ -30,7 +30,7 @@ module.exports = (req, res, next) => {
 
     next(); 
   } catch (error) {
-    // console.error('JWT verification error:', error);
+    console.error('JWT verification error:', error);
 
     return res.status(401).json({
       status: 401,
